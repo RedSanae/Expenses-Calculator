@@ -67,6 +67,7 @@ def delete_expenses():
         print("Select an expense to delete:\n")
         for expense in expenses:
             print(f"[{index}]: Date: {expense[0]} Category: {expense[1]} Amount: ${expense[2]}")#index is used as a way to display the options to delete for the user
+            index+=1#index was temporarily used to list out the elements
         try:
             index=int(input(">"))#index is reused to act as the input for which index the user wants to remove
         except:
